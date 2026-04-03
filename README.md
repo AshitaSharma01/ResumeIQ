@@ -33,4 +33,4 @@ An intelligent recruitment tool designed to transform unstructured PDF/Docx resu
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/AshitaSharma01/AI-Resume-Parser.git](https://github.com/AshitaSharma01/AI-Resume-Parser.git)
+   git clone [https://github.com/AshitaSharma01/AI-Resume-Parser.git](https://github.com/AshitaSharma01/ResumeIQ.git)
