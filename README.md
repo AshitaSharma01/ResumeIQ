@@ -31,9 +31,6 @@
 
 ---
 
-## 📸 Demo
-
-![Dashboard Preview](https://via.placeholder.com/800x400?text=ResumeIQ+Dashboard)
 
 Upload resumes → AI parses instantly → View skill analytics → Export CSV
 
