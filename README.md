@@ -1,36 +1,123 @@
-# 📄 AI-Driven Resume Intelligence System
-**Automated Information Extraction & Skill-Gap Analysis**
+# 🧠 AI-Resume-Parser
+### Intelligent Resume Parsing & Skill Analytics — Powered by spaCy NLP
 
-An intelligent recruitment tool designed to transform unstructured PDF/Docx resumes into standardized, actionable data. This project leverages **Natural Language Processing (NLP)** to understand context and extract key professional entities with high precision.
-
----
-
-### ✨ Key Features
-* **Named Entity Recognition (NER):** Extracts Names, Contact Info, Universities, and Job Titles using `spaCy`.
-* **Skill-Gap Analysis:** Automatically compares extracted skills against Job Descriptions (JD) to provide a compatibility score.
-* **Structured Data Output:** Converts messy resume text into clean, validated JSON format.
-* **Interactive Dashboard:** Built with `Streamlit` for a seamless user experience for both recruiters and candidates.
+> Transform unstructured PDF/DOCX resumes into clean, structured data with AI-driven entity extraction and skill frequency analysis.
 
 ---
 
-### 🛠️ Tech Stack
-* **Language:** Python 3.9+
-* **NLP Engine:** spaCy (en_core_web_lg)
-* **Framework:** Streamlit (Frontend & UI)
-* **Libraries:** PyMuPDF (PDF parsing), Pandas (Data handling), Pydantic (Data validation)
+## ✨ Features
+
+- **Named Entity Recognition** — Extracts candidate names using spaCy's NLP pipeline
+- **Smart Contact Extraction** — Detects emails and phone numbers with precision regex
+- **Skill Detection** — Matches 20+ technical skills across Python, ML, AI, Cloud, and more
+- **Skill Frequency Analytics** — Visual bar and pie charts showing skill distribution
+- **Batch Processing** — Upload and parse multiple resumes at once
+- **CSV Export** — Download all parsed data as a structured report
+- **Interactive Dashboard** — Clean, dark-themed Streamlit UI for recruiters
 
 ---
 
-### 📊 How it Works
-1. **Document Ingestion:** Uses `PyMuPDF` to extract raw text from uploaded resumes.
-2. **Entity Extraction:** Processes text through an NLP pipeline to identify professional entities.
-3. **Keyword Matching:** Utilizes a custom skill-set dictionary to categorize technical and soft skills.
-4. **Scoring Engine:** Calculates a match percentage based on JD requirements.
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Language | Python 3.9+ |
+| NLP Engine | spaCy (`en_core_web_sm`) |
+| PDF Parsing | pdfplumber |
+| DOCX Parsing | docx2txt |
+| Frontend/UI | Streamlit |
+| Data Handling | Pandas |
+| Charts | Plotly |
 
 ---
 
-### 🚀 Local Setup & Installation
+## 📸 Demo
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/AshitaSharma01/AI-Resume-Parser.git](https://github.com/AshitaSharma01/ResumeIQ.git)
+![Dashboard Preview](https://via.placeholder.com/800x400?text=ResumeIQ+Dashboard)
+
+Upload resumes → AI parses instantly → View skill analytics → Export CSV
+
+---
+
+## 🚀 Local Setup
+
+**1. Clone the repository**
+```bash
+git clone https://github.com/AshitaSharma01/AI-Resume-Parser.git
+cd AI-Resume-Parser
+```
+
+**2. Create and activate virtual environment**
+```bash
+python -m venv venv
+
+# Windows
+venv\Scripts\activate
+
+# Mac/Linux
+source venv/bin/activate
+```
+
+**3. Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+**4. Download spaCy model**
+```bash
+python -m spacy download en_core_web_sm
+```
+
+**5. Run the app**
+```bash
+streamlit run streamlit_app.py
+```
+
+Open your browser at `http://localhost:8501` 🎉
+
+---
+
+## 📂 Project Structure
+
+```
+AI-Resume-Parser/
+│
+├── streamlit_app.py      # Main Streamlit UI
+├── resume_parser.py      # Core NLP parsing logic
+├── requirements.txt      # Dependencies
+├── parsed_resumes.csv    # Sample output
+└── resumes/              # Sample resume files
+```
+
+---
+
+## 🎯 How It Works
+
+```
+PDF/DOCX Resume
+      ↓
+Text Extraction (pdfplumber / docx2txt)
+      ↓
+NLP Pipeline (spaCy NER)
+      ↓
+Entity Extraction → Name, Email, Phone, Skills
+      ↓
+Analytics Dashboard + CSV Export
+```
+
+---
+
+## 📊 Skills Detected
+
+`Python` `Java` `C++` `C#` `JavaScript` `TypeScript` `Machine Learning` `Deep Learning` `Data Science` `AI` `TensorFlow` `Keras` `PyTorch` `SQL` `Pandas` `NumPy` `React` `Node.js` `Django` `Flask` `Docker` `AWS` `Git`
+
+---
+
+## 🙋‍♀️ Author
+
+**Ashita Sharma**  
+[GitHub](https://github.com/AshitaSharma01) • [LinkedIn](https://linkedin.com/in/ashita-sharma)
+
+---
+
+<p align="center">Built with ❤️ using Python & spaCy</p>
